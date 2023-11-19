@@ -107,7 +107,7 @@ export default function Notes() {
                     name="efirstname"
                     aria-describedby="emailHelp"
                     value={note.efirstname}
-                    minLength={3}
+                    minLength={1}
                     required
                     onChange={handleOnChange}
                   />
@@ -122,7 +122,7 @@ export default function Notes() {
                     id="elastname"
                     value={note.elastname}
                     name="elastname"
-                    minLength={5}
+                    minLength={1}
                     required
                     onChange={handleOnChange}
                   />
@@ -184,7 +184,7 @@ export default function Notes() {
                     Email
                   </label>
                   <input
-                    type="text"
+                    type="email"
                     className="form-control"
                     id="eemail"
                     value={note.eemail}
