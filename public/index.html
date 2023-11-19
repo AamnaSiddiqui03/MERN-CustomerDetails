@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="data:image/png;base64,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" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -24,12 +22,16 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <title>Customers List</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script src="https://kit.fontawesome.com/7e0b83c905.js" crossorigin="anonymous"></script>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -39,5 +41,9 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
